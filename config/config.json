@@ -1,0 +1,13 @@
+{
+  "development": {
+    "username": "ivanmatas",
+    "password": null,
+    "database": "doniraj_hr",
+    "host": "localhost",
+    "dialect": "postgres",
+    "define": {
+      "createdAt": "created_at",
+      "updatedAt": "updated_at"
+    }
+  }
+}
