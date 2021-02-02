@@ -34,13 +34,4 @@ Object.keys(db).forEach(modelName => {
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
-// db.organizations = require("./organization")(sequelize, Sequelize);
-// db.cities = require("./city")(sequelize, Sequelize);
-//
-// db.cities.hasMany(db.organizations, { as: "organizations" });
-// db.organizations.belongsTo(db.cities, {
-//     foreignKey: "city_id",
-//     as: "city",
-// });
-
 module.exports = db;

@@ -9,5 +9,8 @@
       "createdAt": "created_at",
       "updatedAt": "updated_at"
     }
+  },
+  "production": {
+    "use_env_variable": "postgres://kqorpteaxmzizn:ba149ac9c288fc1fcf0628a4f96ead0312f8eb8d2871f4d75a6050aeb1281354@ec2-52-211-108-161.eu-west-1.compute.amazonaws.com:5432/d8kep87nk1oec8\n",
   }
 }
