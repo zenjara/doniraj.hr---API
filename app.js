@@ -29,6 +29,13 @@ app.use(adminBro.options.rootPath, router)
 
 ///////
 
+if(process.env.NODE_ENV !== 'development'){
+    const serverURL = "https://donirajhr-api.herokuapp.com/"
+}else{
+    const serverURL = "http://localhost:3000/"
+}
+
+
 const options = {
     definition: {
         openapi: "3.0.0",
@@ -49,7 +56,7 @@ const options = {
         },
         servers: [
             {
-                url: "http://localhost:3000/",
+                url: process.env.SERVER_URL || "http://localhost:3000/",
             },
         ],
     },
